@@ -37,4 +37,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Directories added by node
+node_modules
+
 # End of https://www.gitignore.io/api/osx,git,dropbox
