@@ -9,4 +9,6 @@ COPY gulpfile.js /owls/src
 COPY package.json /owls/src
 RUN npm install gulp --save-dev
 RUN npm install jshint gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
+EXPOSE 8080
+RUN gulp
 CMD ["/bin/bash"]
