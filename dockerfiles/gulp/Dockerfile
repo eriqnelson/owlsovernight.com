@@ -1,14 +1,16 @@
 FROM node:latest
-RUN npm install gulp-cli -g
 RUN mkdir /owls
-VOLUME /owls
 WORKDIR /owls
+VOLUME /owls
 RUN mkdir -p src/{html,images,js,scss} build/{html,images,js,css}
 COPY /src /owls/src
-COPY gulpfile.js /owls/src
-COPY package.json /owls/src
-RUN npm install gulp --save-dev
-RUN npm install jshint gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
+COPY gulpfile.js /owls
+COPY package.json /owls
+RUN npm install gulp-cli -g
+RUN npm install --save-dev
+# RUN npm install jshint gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
 EXPOSE 8080
 RUN gulp
-CMD ["/bin/bash"]
+CMD ["/bin/bash/"]
+# Nothing ever Works In Windows
+s
