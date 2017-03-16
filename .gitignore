@@ -39,5 +39,7 @@ Temporary Items
 
 # Directories added by node
 node_modules
+# Directories for distribution
+dist
 
 # End of https://www.gitignore.io/api/osx,git,dropbox
