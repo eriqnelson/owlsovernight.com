@@ -1,0 +1,16 @@
+.mdl-grid {
+	max-width: 300px;
+	margin-top: 30px;
+}
+/* custom styles */
+
+.acme-card {
+	width: 300px;
+	height: 300px;
+	background: url('http://tfirdaus.github.io/mdl/images/laptop.jpg') center / cover;
+}
+.acme-card-file {
+	padding: 1em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+}
