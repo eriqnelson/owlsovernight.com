@@ -17,6 +17,8 @@
  *
  */
 
+/*jshint esversion: 6 */
+
 'use strict';
 
 // This gulpfile makes use of new JavaScript features.
