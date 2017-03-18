@@ -8,13 +8,14 @@ RUN apt-get install -y nodejs npm
 # Debian installs `node` as `nodejs` so let's not do that
 RUN update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 RUN npm install --global gulp -y
-RUN mkdir /owls
-WORKDIR /owls
-VOLUME /owls
-RUN mkdir -p src/{html,images,js,scss} build/{html,images,js,css}
-COPY /src /owls/src
-COPY gulpfile.js /owls
-COPY package.json /owls
+RUN mkdir /app
+VOLUME /app
+COPY /app /app
+COPY gulpfile.babel.js /app
+COPY package.json /app
+WORKDIR /app
+# RUN npm install --save-dev babel-cli babel-preset-env
+RUN npm install gulp
 RUN npm install --save-dev
 # overwrite this with 'CMD []' in a dependent Dockerfile
 CMD ["/bin/bash"]
