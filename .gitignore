@@ -1,4 +1,5 @@
-# Created by https://www.gitignore.io/api/osx,git,dropbox
+# Created from https://www.gitignore.io/api/osx,git,dropbox
+# Adds temp, tmp files & directories to .gitignore
 
 ### Dropbox ###
 # Dropbox settings and caches
@@ -37,9 +38,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Directories added by node
+# Directories and files added by node
 node_modules
+npm-debug.log
+
 # Directories for distribution
 dist
 
-# End of https://www.gitignore.io/api/osx,git,dropbox
+# Temp directories and files
+.tmp
+.temp
+*.tmp
+*.temp
