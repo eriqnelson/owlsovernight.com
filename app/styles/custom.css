@@ -11,10 +11,14 @@ html, body {
 .owl-card-square > .mdl-card__title {
   color: #fff;
   background:
-    url(/images/owlcard.jpg) center center no-repeat #46b6ac;
+    url(/images/owlcard.jpg) center center no-repeat;
   color: white;
 }
-
 body {
   background: #CFD8DC ;
+}
+.twitter_button {
+  background: url(/images/Twitter_Logo_White_On_Blue.png);
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
 }
